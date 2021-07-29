@@ -34,7 +34,6 @@ class TokenReceiveSerializer(serializers.Serializer):
 
 
 class UserSerializer(serializers.ModelSerializer):
-
     class Meta:
         model = User
         fields = ('first_name', 'last_name', 'username',
@@ -82,21 +81,18 @@ class CommentsSerializer(serializers.ModelSerializer):
 
 
 class CategoriesSerializer(serializers.ModelSerializer):
-
     class Meta:
         model = Category
         fields = ('name', 'slug')
 
 
 class GenresSerializer(serializers.ModelSerializer):
-
     class Meta:
         model = Genre
         fields = ('name', 'slug')
 
 
 class TitleBaseSerializer(serializers.ModelSerializer):
-
     class Meta:
         model = Title
         fields = '__all__'

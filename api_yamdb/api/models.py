@@ -120,14 +120,12 @@ class CategoryAndGenreBaseModel(models.Model):
 
 
 class Category(CategoryAndGenreBaseModel):
-
     class Meta(CategoryAndGenreBaseModel.Meta):
         verbose_name = 'Категория'
         verbose_name_plural = 'Категории'
 
 
 class Genre(CategoryAndGenreBaseModel):
-
     class Meta(CategoryAndGenreBaseModel.Meta):
         verbose_name = 'Жанр'
         verbose_name_plural = 'Жанры'
